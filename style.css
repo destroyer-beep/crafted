@@ -1,0 +1,152 @@
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>ШРИФТЫ<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('./fonts/Overpass-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('./fonts/Overpass-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'SofiaSans';
+    src: url('./fonts/SofiaSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'SofiaSans';
+    src: url('./fonts/SofiaSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'SofiaSans';
+    src: url('./fonts/SofiaSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>СБРОС СТИЕЙ<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+* {
+    box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: 'Overpass', sans-serif;
+}
+
+a, a:link, a:visited, a:hover  {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1676px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>HEADER<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.header {
+    padding: 11px 0;
+    background-color: #F3EEE7;
+}
+
+.header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__text {
+    font-family: 'SofiaSans';
+    font-weight: 600;
+    font-size: 48px;
+    letter-spacing: 0.02em;
+}
+
+.header__links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 200px;
+}
+
+.header__link {
+    display: flex;
+    align-items: center;
+}
+
+.header__basket {
+    padding-right: 26.5px;
+}
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>MAIN<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>FOOTER<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.footer {
+    padding: 45px 0 48px;
+    background-color: #F3EEE7;
+}
+
+.footer__wrap {
+    display: flex;
+    width: 100%;
+    max-width: 445px;
+    margin-left: auto;
+    justify-content: space-between;
+}
+
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer__link {
+    display: flex;
+    align-items: center;
+}
+
+.footer__link>span {
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 45px;
+}
