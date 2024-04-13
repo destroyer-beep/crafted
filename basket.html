@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Корзина</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <a class="header__logo" href="#">
+                    <img src="./image/logo.svg" alt="Логотип">
+                </a>
+                <span class="header__text">CRAFTED  WITH  LOVE</span>
+                <ul class="header__links">
+                    <li class="header__link">
+                        <a href="./index.html">
+                            ГЛАВНАЯ
+                        </a>
+                    </li>
+                    <li class="header__link">
+                        <a href="./catalog.html">
+                            КАТАЛОГ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__preview main__preview_basket">
+            <h1 class="preview__title preview__title_basket">КОРЗИНА</h1>
+        </div>
+        <div class="basket__container">
+            <div class="basket__content">
+                <ul class="basket__list">
+                    <li class="basket__item">
+                        <img class="basket__itmage" src="./image/cardImg1.png" alt="">
+                        <p class="basket__title">Комплект</p>
+                        <p class="basket__price">2500 ₽</p>
+                        <button class="item__btn basket__btn_like">
+                            <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 0.999986C23.7787 0.979192 27 2.87434 27 8.99999C27 15.1256 13.9999 24 13.9999 24C13.9999 24 1 15.1256 1 8.99999C1 2.87434 4.22121 1.00384 8 0.999986C10 0.997945 12.7518 2.25457 14.0001 3.99999C15.2482 2.25457 17.9775 1.01112 20 0.999986Z" stroke="#464646" stroke-width="2" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="item__btn basket__btn_delete" id="deleteItem">
+                            <svg width="24" height="30" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.00018 6L6.8164 3.55132C7.22475 2.32629 8.37116 1.5 9.66246 1.5H14.3379C15.6292 1.5 16.7756 2.32629 17.1839 3.55132L18.0002 6M6.00018 6H2.42723C1.31216 6 0.586912 7.17347 1.08559 8.17082L1.81913 9.6379C2.10327 10.2062 2.26385 10.8282 2.2903 11.463L2.82048 24.1873C2.92091 26.5977 4.90417 28.5 7.31658 28.5H16.6838C19.0962 28.5 21.0794 26.5977 21.1799 24.1873L21.7101 11.463C21.7365 10.8282 21.8971 10.2062 22.1812 9.6379L22.9148 8.17082C23.4134 7.17347 22.6882 6 21.5731 6H18.0002M6.00018 6H18.0002M15.6601 21.75L16.0351 12.75M8.34027 21.75L7.96527 12.75" stroke="#363538" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </li>
+                    <!-- <li class="basket__item">
+                        <img class="basket__itmage" src="./image/cardImg1.png" alt="">
+                        <p class="basket__title">Комплект</p>
+                        <p class="basket__price">2500 ₽</p>
+                        <button class="item__btn basket__btn_like">
+                            <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 0.999986C23.7787 0.979192 27 2.87434 27 8.99999C27 15.1256 13.9999 24 13.9999 24C13.9999 24 1 15.1256 1 8.99999C1 2.87434 4.22121 1.00384 8 0.999986C10 0.997945 12.7518 2.25457 14.0001 3.99999C15.2482 2.25457 17.9775 1.01112 20 0.999986Z" stroke="#464646" stroke-width="2" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="item__btn basket__btn_delete">
+                            <svg width="24" height="30" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.00018 6L6.8164 3.55132C7.22475 2.32629 8.37116 1.5 9.66246 1.5H14.3379C15.6292 1.5 16.7756 2.32629 17.1839 3.55132L18.0002 6M6.00018 6H2.42723C1.31216 6 0.586912 7.17347 1.08559 8.17082L1.81913 9.6379C2.10327 10.2062 2.26385 10.8282 2.2903 11.463L2.82048 24.1873C2.92091 26.5977 4.90417 28.5 7.31658 28.5H16.6838C19.0962 28.5 21.0794 26.5977 21.1799 24.1873L21.7101 11.463C21.7365 10.8282 21.8971 10.2062 22.1812 9.6379L22.9148 8.17082C23.4134 7.17347 22.6882 6 21.5731 6H18.0002M6.00018 6H18.0002M15.6601 21.75L16.0351 12.75M8.34027 21.75L7.96527 12.75" stroke="#363538" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="basket__item">
+                        <img class="basket__itmage" src="./image/cardImg1.png" alt="">
+                        <p class="basket__title">Комплект</p>
+                        <p class="basket__price">2500 ₽</p>
+                        <button class="item__btn basket__btn_like">
+                            <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 0.999986C23.7787 0.979192 27 2.87434 27 8.99999C27 15.1256 13.9999 24 13.9999 24C13.9999 24 1 15.1256 1 8.99999C1 2.87434 4.22121 1.00384 8 0.999986C10 0.997945 12.7518 2.25457 14.0001 3.99999C15.2482 2.25457 17.9775 1.01112 20 0.999986Z" stroke="#464646" stroke-width="2" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="item__btn basket__btn_delete">
+                            <svg width="24" height="30" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.00018 6L6.8164 3.55132C7.22475 2.32629 8.37116 1.5 9.66246 1.5H14.3379C15.6292 1.5 16.7756 2.32629 17.1839 3.55132L18.0002 6M6.00018 6H2.42723C1.31216 6 0.586912 7.17347 1.08559 8.17082L1.81913 9.6379C2.10327 10.2062 2.26385 10.8282 2.2903 11.463L2.82048 24.1873C2.92091 26.5977 4.90417 28.5 7.31658 28.5H16.6838C19.0962 28.5 21.0794 26.5977 21.1799 24.1873L21.7101 11.463C21.7365 10.8282 21.8971 10.2062 22.1812 9.6379L22.9148 8.17082C23.4134 7.17347 22.6882 6 21.5731 6H18.0002M6.00018 6H18.0002M15.6601 21.75L16.0351 12.75M8.34027 21.75L7.96527 12.75" stroke="#363538" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="basket__item">
+                        <img class="basket__itmage" src="./image/cardImg1.png" alt="">
+                        <p class="basket__title">Комплект</p>
+                        <p class="basket__price">2500 ₽</p>
+                        <button class="item__btn basket__btn_like">
+                            <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 0.999986C23.7787 0.979192 27 2.87434 27 8.99999C27 15.1256 13.9999 24 13.9999 24C13.9999 24 1 15.1256 1 8.99999C1 2.87434 4.22121 1.00384 8 0.999986C10 0.997945 12.7518 2.25457 14.0001 3.99999C15.2482 2.25457 17.9775 1.01112 20 0.999986Z" stroke="#464646" stroke-width="2" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="item__btn basket__btn_delete">
+                            <svg width="24" height="30" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.00018 6L6.8164 3.55132C7.22475 2.32629 8.37116 1.5 9.66246 1.5H14.3379C15.6292 1.5 16.7756 2.32629 17.1839 3.55132L18.0002 6M6.00018 6H2.42723C1.31216 6 0.586912 7.17347 1.08559 8.17082L1.81913 9.6379C2.10327 10.2062 2.26385 10.8282 2.2903 11.463L2.82048 24.1873C2.92091 26.5977 4.90417 28.5 7.31658 28.5H16.6838C19.0962 28.5 21.0794 26.5977 21.1799 24.1873L21.7101 11.463C21.7365 10.8282 21.8971 10.2062 22.1812 9.6379L22.9148 8.17082C23.4134 7.17347 22.6882 6 21.5731 6H18.0002M6.00018 6H18.0002M15.6601 21.75L16.0351 12.75M8.34027 21.75L7.96527 12.75" stroke="#363538" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </li> -->
+                    <div class="basket__sum">
+                        <p>ИТОГО</p>
+                        <p>3500 ₽</p>
+                    </div>
+                </ul>
+                <form class="basket__form">
+                    <label>
+                        Ваше имя:
+                        <input type="text" id="name">
+                    </label>
+                    <label>
+                        Ваш Email:
+                        <input type="text" id="email">
+                    </label>
+                    <label>
+                        Ваш телефон:
+                        <input type="text" id="phone">
+                    </label>
+                    <label>
+                        Промокод:
+                        <input type="text" id="promo">
+                    </label>
+                    <button class="form__submit" type="submit">Оформить заказ</button>
+                </form>
+            </div>
+            
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <ul class="footer__contact">
+                    <li>
+                        <a class="footer__link" href="tel:+7 999 99-99-99">
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.523 29.4899C21.3231 35.29 29.0466 37.4269 34.7366 35.3353C37.2667 34.4052 37.4015 31.2192 35.6739 29.15L34.2304 27.4209C33.0442 26.0001 30.8944 25.9035 29.5857 27.2123C28.6585 28.1395 27.253 28.397 26.0958 27.7805C24.4778 26.9186 22.2231 25.5834 20.8263 24.1866C19.4295 22.7898 18.0942 20.5351 17.2323 18.9171C16.6158 17.7598 16.8734 16.3544 17.8006 15.4272C19.1093 14.1184 19.0128 11.9687 17.592 10.7825L15.8629 9.33892C13.7937 7.6114 10.6076 7.74619 9.67761 10.2762C7.586 15.9663 9.72289 23.6898 15.523 29.4899Z" stroke="#363538" stroke-width="1.5"/>
+                            </svg>
+
+                            <span>+7 999 99-99-99</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="footer__link" href="https://www.google.ru/maps/place/Санкт-Петербург/@59.9266914,30.0063803,10z/data=!4m15!1m8!3m7!1s0x4696378cc74a65ed:0x6dc7673fab848eff!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LM!3b1!8m2!3d59.9310584!4d30.3609096!16zL20vMDZwcjY!3m5!1s0x4696378cc74a65ed:0x6dc7673fab848eff!8m2!3d59.9310584!4d30.3609096!16zL20vMDZwcjY?entry=ttu">
+                            <svg width="42" height="42" viewBox="0 0 42 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M26.25 17.5C26.25 20.3995 23.8995 22.75 21 22.75C18.1005 22.75 15.75 20.3995 15.75 17.5C15.75 14.6005 18.1005 12.25 21 12.25C23.8995 12.25 26.25 14.6005 26.25 17.5Z" stroke="#363538" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 5.25C14.2345 5.25 8.75 10.7345 8.75 17.5C8.75 20.4987 9.82744 23.2457 11.6163 25.375L18.1528 34.5177C19.5488 36.4702 22.4512 36.4702 23.8472 34.5177L30.3837 25.375C32.1726 23.2457 33.25 20.4987 33.25 17.5C33.25 10.7345 27.7655 5.25 21 5.25Z" stroke="#363538" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                            <span>Санкт-Петербург</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a class="footer__link" href="mailto:Craftwithlove@99.com">
+                            <svg width="44" height="44" viewBox="0 0 44 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 14.6666L18.9491 19.9661C20.7966 21.1977 23.2034 21.1977 25.0509 19.9661L33 14.6666M11 34.8333H33C36.0376 34.8333 38.5 32.3709 38.5 29.3333V14.6666C38.5 11.6291 36.0376 9.16663 33 9.16663H11C7.96243 9.16663 5.5 11.6291 5.5 14.6666V29.3333C5.5 32.3709 7.96243 34.8333 11 34.8333Z" stroke="#363538" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                            <span>Craftwithlove@99.com</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <a class="footer__logo" href="#">
+                    <img src="./image/logo.svg" alt="Логотип">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
