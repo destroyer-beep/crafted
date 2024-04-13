@@ -290,6 +290,10 @@ ul {
 }
 
 .basket__list {
+    width: 100%;
+}
+
+.basket__list > ul {
     display: flex;
     flex-direction: column;
     gap: 27px;
