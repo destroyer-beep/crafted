@@ -114,8 +114,154 @@ ul {
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>MAIN<<<<<<<<<<<<<<<<<<<<<<<<< */
 
+.main__preview {
+    width: 100%;
+    max-width: 1920px;
+    height: 91vh;
+    margin-bottom: 41px;
+    text-align: center;
+    opacity: .8;
+    background-image: url(./image/mainPrev.png);
+    background-size: cover;
+    background-position: center;
+    border-image-repeat: no-repeat;
+}
+
+.preview__title {
+    font-family: 'SofiaSans';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 65px;
+    color: white;
+    position: relative;
+    top: 38vh;
+}
+
+.main__desc {
+    width: 100%;
+    max-width: 847px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 37px;
+    color: white;
+    position: relative;
+    top: 38vh;
+}
+
+.main__container {
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.main__title {
+    max-width: 335px;
+    text-align: center;
+    margin: 0 auto 42px;
+    padding-bottom: 17px;
+    font-family: 'SofiaSans';
+    font-weight: 500;
+    font-size: 32px;
+    color: black;
+    border-bottom: 15px solid #F3EEE7;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 79px;
+    padding: 0 0 67px;
+}
+
+.cards__item {
+    width: 334px;
+    height: 460px;
+    border-radius: 15px;
+    background-color: #F3EEE7;
+    position: relative;
+}
+
+.item__desc {
+    padding: 16px 21px 9px 22px;
+}
+
+.item__title {
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: #000000;
+}
+
+.item__price {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: #000000;
+}
+
+.item__btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.item__btn_like {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.item__btn_buy {
+    position: absolute;
+    bottom: 25px;
+    right: 26.5px;
+}
+
+.recommendations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recommendations__title {
+    margin: 0 22px 22px;
+    padding-bottom: 18px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 93%;
+    text-align: center;
+    border-bottom: 15px solid #F3EEE7;
+}
+
+.recommendations__list {
+    margin-bottom: 55px;
+}
+
+.recommendations__item {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #000000;
+}
 
 
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>CATALOG<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.main__preview_catalog {
+    height: 39vh;
+    background-position-y: -300px;
+}
+
+.preview__title_catalog {
+    top: 18vh;
+    margin-bottom: 47px;
+}
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>FOOTER<<<<<<<<<<<<<<<<<<<<<<<<< */
