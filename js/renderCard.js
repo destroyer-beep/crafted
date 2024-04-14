@@ -5,7 +5,7 @@ const catalogContainer = document.querySelector('.cards');
 data.forEach(card => {
     catalogContainer.innerHTML += `
                     <li class="cards__item">
-                    <img class="item__img" src="${card.img}" alt="${card.title}">
+                    <img class="item__img" src="${location.pathname.includes('index') ? card.img : '../' + card.img}" alt="${card.title}">
                     <div class="item__desc">
                         <p class="item__title">${card.title}</p>
                         <p class="item__price">${card.price} ₽</p>

@@ -1,15 +1,17 @@
 import {data} from './data.js';
 
 const basketContainer = document.querySelector('.basket__list > ul');
+const sumPriceContainer = document.querySelector('#sum_price');
 
 function renderBasket() {
     const localStorageData = localStorage.getItem('data');
     const localStorageDataParse = localStorageData ? JSON.parse(localStorageData) : {};
     basketContainer.innerHTML = ``;
-
+    let sum = 0;
     Object.values(localStorageDataParse).forEach(card => {
+        sum += card.price;
         basketContainer.innerHTML += `<li class="basket__item">
-                        <img class="basket__itmage" src="${card.img}" alt="${card.title}">
+                        <img class="basket__itmage" src="${'../' + card.img}" alt="${card.title}">
                         <p class="basket__title">${card.title}</p>
                         <p class="basket__price">${card.price} ₽</p>
                         <button class="item__btn basket__btn_like">
@@ -24,6 +26,8 @@ function renderBasket() {
                         </button>
                     </li>`
     })
+
+    sumPriceContainer.textContent = sum + ' ₽';
 
     const buttonsDelete = document.querySelectorAll('.basket__btn_delete');
     buttonsDelete.forEach(btn => {
