@@ -84,6 +84,7 @@ ul {
 
 .header__logo {
     display: flex;
+    width: 200px;
     align-items: center;
 }
 
@@ -98,7 +99,7 @@ ul {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 200px;
+    width: 200px;
 }
 
 .header__link {
