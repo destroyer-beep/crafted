@@ -84,6 +84,7 @@ ul {
 
 .header__logo {
     display: flex;
+    width: 200px;
     align-items: center;
 }
 
@@ -92,14 +93,13 @@ ul {
     font-weight: 600;
     font-size: 48px;
     letter-spacing: 0.02em;
-    transform: translateX(50px);
 }
 
 .header__links {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 200px;
+    width: 200px;
 }
 
 .header__link {
@@ -477,10 +477,6 @@ ul {
     .cards {
         justify-content: space-evenly;
         column-gap: 20px;
-    }
-
-    .header__links {
-        max-width: 150px;
     }
 }
 
