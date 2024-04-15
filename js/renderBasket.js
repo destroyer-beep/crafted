@@ -1,5 +1,3 @@
-import {data} from './data.js';
-
 const basketContainer = document.querySelector('.basket__list > ul');
 const sumPriceContainer = document.querySelector('#sum_price');
 

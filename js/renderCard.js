@@ -1,5 +1,3 @@
-import {data} from './data.js';
-
 const catalogContainer = document.querySelector('.cards');
 
 data.forEach(card => {
