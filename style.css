@@ -92,6 +92,7 @@ ul {
     font-weight: 600;
     font-size: 48px;
     letter-spacing: 0.02em;
+    transform: translateX(50px);
 }
 
 .header__links {
@@ -476,6 +477,10 @@ ul {
     .cards {
         justify-content: space-evenly;
         column-gap: 20px;
+    }
+
+    .header__links {
+        max-width: 150px;
     }
 }
 
